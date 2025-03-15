@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+</head>
+<body style="font-family: 'Playfair Display', serif; background-image: url('pexels-pixabay-533935.jpg'); height: 100vh; width: 100%; background-size: cover;">
+
+  <header style="background-color: orange; height: 50px; width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 0 20px;">
+    <nav>
+      <ul style="list-style: none; margin: 0; padding: 0; display: flex;">
+        <img src="20250315_153451.jpg"  width="100" height="50" style="margin-right: 20px;">
+        <li style="margin-right: 20px;"><a href="bs..html" style="color: #333; text-decoration: none;">Home</a></li>
+        <li style="margin-right: 20px;"><a href="sp.html" style="color: #333; text-decoration: none;">Shop</a></li>
+        <li style="margin-right: 20px;"><a href="au.html" style="color: #333; text-decoration: none;">About Us</a></li>
+        <li><a href="au.html" style="color: #333; text-decoration: none;">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main style="display: flex; flex-direction: column; align-items: center; padding: 20px;">
+    <h1 style="color: #333; font-size: 36px; margin-bottom: 10px;">Shop Top categories</h1>
+    <caption style="color: #666; font-size: 18px; margin-bottom: 20px;">Explore the most used skin cares this week</caption>
+    <section style="background-color: #F5F5F5; padding: 20px; margin-bottom: 20px; border: 1px solid #ddd; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+      <img src="belle-beauty-JPvy3rrWSeM-unsplash.jpg" width="100%" height="300" style="object-fit: cover; border-radius: 10px;">
+      <a href="Shop.html" style="color: #FFD700; text-decoration: none; font-size: 24px; margin-top: 10px; display: block;">Skin Care</a>
+    </section>
+    <section style="background-color: #F5F5F5; padding: 20px; margin-bottom: 20px; border: 1px solid #ddd; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+      <img src="chandra-oh-01M4_XKKSiE-unsplash.jpg" width="100%" height="300" style="object-fit: cover; border-radius: 10px;">
+      <a href="Shop.html" style="color: #FFD700; text-decoration: none; font-size: 24px; margin-top: 10px; display: block;">Body Lotions</a>
+    </section>
+    <br>
+    <h2 style="color: #FFD700; font-size: 24px; margin-bottom: 10px;"><a href="shop.html" style="color: #FFD700; text-decoration: none;">Shop Now</a></h2>
+  </main>
+
+ <footer style="background-color: #964B00; color: #fff; padding: 20px; text-align: center;">
+    <section style="margin-bottom: 20px;">
+      <h3 style="font-size: 24px; margin-bottom: 10px;">Company Info</h3>
+      <a href="au.html" style="color: #fff; text-decoration: none;">About us</a>
+      <a href="au.html" style="color: #fff; text-decoration: none;">Contact US</a>
+    </section>
+    <section>
+      <h3 style="font-size: 24px; margin-bottom: 10px;">Categories</h3>
+      <a href="sp.html" style="color: #fff; text-decoration: none;">Skin cares</a>
+      <a href="sp.html" style="color: #fff; text-decoration: none;">Body Lotions</a>
+      <a href="sp.html" style="color: #fff; text-decoration: none;">New Arrivals</a>
+      <a href="sp.html" style="color: #fff; text-decoration: none;">Most Used Products</a>
+    </section>
+  </footer>
+  <style>
+  /* animations.css */
+
+/* Header Animation */
+
+header {
+  animation: header-animation 2s ease-in-out;
+}
+
+@keyframes header-animation {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Main Animation */
+
+main {
+  animation: main-animation 2s ease-in-out;
+}
+
+@keyframes main-animation {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Section Animation */
+
+section {
+  animation: section-animation 2s ease-in-out;
+}
+
+@keyframes section-animation {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Image Animation */
+
+section img {
+  animation: image-animation 2s ease-in-out;
+}
+
+@keyframes image-animation {
+  0% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+
+/* Button Animation */
+
+a {
+  transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+  transform: scale(1.1);
+  color: #FFD700;
+}
+
+/* Footer Animation */
+
+footer {
+  animation: footer-animation 2s ease-in-out;
+}
+
+@keyframes footer-animation {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+ </style>
+  <script>
+ 
+// Selectors
+const header = document.querySelector('header');
+const main = document.querySelector('main');
+const sections = document.querySelectorAll('section');
+const images = document.querySelectorAll('section img');
+const buttons = document.querySelectorAll('a');
+const footer = document.querySelector('footer');
+
+// Event Listeners
+window.addEventListener('scroll', () => {
+  // Header background color change on scroll
+  if (window.scrollY > 50) {
+    header.style.backgroundColor = '#FFD700';
+  } else {
+    header.style.backgroundColor = 'orange';
+  }
+});
+
+// Section animation on scroll
+window.addEventListener('scroll', () => {
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+    const windowScrollTop = window.scrollY;
+
+    if (windowScrollTop > sectionTop - sectionHeight / 2) {
+      section.style.opacity = '1';
+      section.style.transform = 'translateX(0)';
+    }
+  });
+});
+
+// Image animation on scroll
+window.addEventListener('scroll', () => {
+  images.forEach((image) => {
+    const imageTop = image.offsetTop;
+    const imageHeight = image.offsetHeight;
+    const windowScrollTop = window.scrollY;
+
+    if (windowScrollTop > imageTop - imageHeight / 2) {
+      image.style.opacity = '1';
+      image.style.transform = 'rotate(0deg)';
+    }
+  });
+});
+
+// Button hover effect
+buttons.forEach((button) => {
+  button.addEventListener('mouseover', () => {
+    button.style.transform = 'scale(1.1)';
+    button.style.color = '#FFD700';
+  });
+
+  button.addEventListener('mouseout', () => {
+    button.style.transform = 'scale(1)';
+    button.style.color = '#333';
+  });
+});
+
+// Footer animation on scroll
+window.addEventListener('scroll', () => {
+  const footerTop = footer.offsetTop;
+  const footerHeight = footer.offsetHeight;
+  const windowScrollTop = window.scrollY;
+
+  if (windowScrollTop > footerTop - footerHeight / 2) {
+    footer.style.opacity = '1';
+    footer.style.transform = 'translateY(0)';
+  }
+});
+ </script>
+</body>
+</html>
+
